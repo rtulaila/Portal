@@ -24,7 +24,7 @@ public class PreScreening extends Base {
 
 	public void fillPreScreen() {
 
-		driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT-June10_PreScreenAutomation04");
+	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-name___widget")).sendKeys("RT-June10_PreScreenAutomation04");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-projectDescription___widget")).sendKeys("Project Description field");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1Line1___widget")).sendKeys("123 First Stree");
 	    driver.findElement(By.id("guideContainer-rootPanel-prescreen-psAddress1City___widget")).sendKeys("Toronto");
@@ -46,7 +46,7 @@ public class PreScreening extends Base {
 	    new Select(driver.findElement(By.id("guideContainer-rootPanel-prescreen-naicsCodeId___widget"))).selectByVisibleText("111211: Potato Farming");
 
 	    driver.findElement(By.xpath("//button[@id='guideContainer-rootPanel-prescreen-submit_1344868758___widget']/span[2]")).click();
-	    driver.close();
-		System.out.println("Thank you for your submission !");
+	    		
+	    System.out.println("Thank you for your submission! PreScreening Project is created");
 	}
 }
